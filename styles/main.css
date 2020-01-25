@@ -1,19 +1,31 @@
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
+@font-face {
+    font-family: "MyFont";
+    src: url("../styles/Moon2.0.otf");
+    src:
+    url("../styles/Moon2.0.otf") format("opentype");
 }
+
 
 body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+    font-family: "MyFont";
 }
-
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#grid {
+    float:left;
+    width: 30%;
+    padding-bottom: 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: #1E1E1E;
 }
 
 /* First image (Logo. Full height) */
@@ -48,17 +60,45 @@ html {
 }
 #myNavbar a{
   padding: 12px;
-  text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  width: 25%;
   display: block;
   float: left;
   text-align: center;
+  text-decoration: none;
+
+}
+#myNavbar a:hover{
+    transition:all 0.3s ease-in-out;
+    color: #98D9C7;
+}
+/*.active{
+    text-decoration: underline!important;
+}*/
+.w3-card{
+    box-shadow: none!important;
+}
+
+
+.li{
+    list-style: none;
+    display: table-cell;
+    white-space: nowrap;;
+}
+.ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    display:table;
+    margin:0 auto;
+    overflow: auto;
 }
 
 #myNavbar {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 #paragraphText{
