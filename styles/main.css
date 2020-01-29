@@ -73,8 +73,9 @@ html {
   text-align: center;
   text-decoration: none;
   line-height: 42px;
-
+  color: #707070;
 }
+
 #myNavbar a:hover{
     transition:all 0.3s ease-in-out;
     color: #98D9C7;
