@@ -8,9 +8,11 @@
 
 body, html {
     height: 100%;
-    color: #777;
     line-height: 1.8;
-    font-family: "MyFont";
+    font-family: "Arial";
+}
+.em{
+    color:white;
 }
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -36,13 +38,17 @@ body, html {
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("../assets/images/CraftsPicture.png");
-    min-height: 400px;
+    min-height: 100px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 150px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("../assets/images/ViennaPresPhoto.png");
-    min-height: 400px;
+    min-height:600px;
 }
 
 .w3-wide {
@@ -61,7 +67,7 @@ html {
 #myNavbar a{
   padding: 12px;
   font-size: 17px;
-  width: 25%;
+  width: 15%;
   display: block;
   float: left;
   text-align: center;
@@ -78,7 +84,6 @@ html {
 .w3-card{
     box-shadow: none!important;
 }
-<<<<<<< HEAD
 .w3-row{
     margin-top: 0px;
     margin-bottom: 42px;
@@ -133,9 +138,6 @@ html {
     border-width: 1px;
     border-color: #DCDCDC;
 }
-=======
-
->>>>>>> parent of 79f484f... Portfolio changes
 
 .li{
     list-style: none;
