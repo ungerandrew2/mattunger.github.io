@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Matthew Unger - Industrial Designer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="./styles/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <nav class="w3-top">
+        <div id="myNavbar" style="height: 68px;" class="w3-bar w3-card">
+            <a href="#home" class="active">HOME</a>
+            <a href="#portfolio">DESIGN PROJECTS</a>
+            <a href="#about">ABOUT ME</a>
+        </div>
+    </nav>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <img class="w3-center" src="./assets/images/Asset44.png" />
+        </div>
+    </div>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <section class="bgimg-2" id="portfolio">
+        <div class="w3-modal-content ">
+            
+        </div>
+        <p class="w3-center w3-row" style="font-size: 18px; color: white;">Here are some of my latest projects.</p>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="grid">
+            <div class="row">
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Low Cost Educational Robot For Teaching Childrens STEM Education">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hunab Ku Watch">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="G-tube Feeding Bolster">
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AUV">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bon">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dashboard">
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Oko VR">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Delta Bio-Logic">
+                </div>
+                <div class="box">
+                    <img class="w3-hover-opacity" src="./assets/images/Preview9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Workstation Storyboard">
+                </div>
+            </div>
+            <p class="w3-center w3-row" style="font-size: 14px; color: white; padding-top: 5px;"><em>Click on the images to enlarge.</em></p>
+        </div>
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+    <!-- Container (Portfolio Section) -->
+    <!--<section class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to make them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            
+            <!--<div class="w3-col m3">
+                <img src="./assets/images/Preview1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Low Cost Educational Robot For Teaching Childrens STEM Education">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hunab Ku: A Classic Maya Timepiece">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="G-Tube Feeding Device. A Marquette University Collaboration">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AUV School Project">
+            </div>
+        </div>
+
+        <!--<div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="BON: A planter for beginner bonsai enthusiasts">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Spira: Multishaped Cutting Tool">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Delta Bio-Logic: A multifaced shower head">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./assets/images/Preview8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Senior Thesis: Oko.VR">
+            </div>
+            <form class="w3-col m12" method="get" action="./assets/files/MUngerFullPortfolio.pdf">
+                <button class="w3-button w3-padding-large w3-light-grey w3-center" style="margin-top:64px">Download Full Portfoilio</button>
+            </form>
+            <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"><a href="../ungermatthew.github.io/assets/files/MUngerFullPortfolio.pdf" download>Download Full Portfoilio</a></button>
+       </div>-->
+    </section>
+
+    <section class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love design</em></p>
+        <p>
+            Hello and welcome to my website! Recently, I attended the International HRI conferece hosted at Vienna Austria.
+            I also completed an internship at Marquette University working in the HEIR Lab as a Research Assistant aiding the
+            design of a “tutoring robot” Being creative and solving new challenges are what I enjoy the most in design.
+            For example; learning how to design this website. Whether its drawing, working in CAD, or talking to users,
+            there is never really a dull moment when designing. I am currently employed as an industrial designer for Winnebago Industries. 
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m12 w3-center w3-padding-large">
+                <p style="float: left; margin-left: 150px;"><b><i class="fa fa-user w3-margin-right"></i>Matt Unger</b></p><br>
+            </div>
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="./assets/images/Asset46.png" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+            </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small" id="paragraphText">
+                <p>
+                    I am a recent graduate from the Milwaukee Institute of Art and Design, with a bachelors of Fine Art in Industrial Design.
+                    I am obsessed with trends in technology  In my free time I like to garden (Bonsai), wood work, and build computers for others.
+                    Recently, I have been trying to learn Japanese as a second language and later down the road hopefully work towards obtaining a TEFL certificate. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <div class="bottom">
+        </div>
+        <!--<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/matt.unger.16"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/matthew-unger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+        </div>-->
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/transition.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
