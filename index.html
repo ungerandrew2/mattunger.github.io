@@ -13,7 +13,7 @@
 <body>
     <!-- Navbar (sit on top) -->
     <nav class="w3-top">
-        <div id="myNavbar" style="height: 68px;" class="w3-bar w3-card w3-white">
+        <div id="myNavbar" class="w3-bar w3-card w3-white">
             <a href="#home" class="active">HOME</a>
             <a href="#portfolio">DESIGN PROJECTS</a>
             <a href="#about">ABOUT ME</a>
@@ -26,55 +26,48 @@
         </div>
     </div>
     <!-- Second Parallax Image with Portfolio Text -->
-    <section class="bgimg-2" id="portfolio">
-        <p class="w3-center w3-row" style="font-size: 18px; color: white;">Here are some of my latest projects.</p>
-
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="grid">
-            <div class="row">
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Low Cost Educational Robot For Teaching Childrens STEM Education">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hunab Ku Watch">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="G-tube Feeding Bolster">
-                </div>
-            </div>
-            <div class="row">
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AUV">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bon">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dashboard">
-                </div>
-            </div>
-            <div class="row">
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Oko VR">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Delta Bio-Logic">
-                </div>
-                <div class="box">
-                    <img class="w3-hover-opacity" src="./assets/images/Preview9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Workstation Storyboard">
-                </div>
-            </div>
-            <p class="w3-center w3-row" style="font-size: 14px; color: white; padding-top: 5px;"><em>Click on the images to enlarge.</em></p>
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
         </div>
+    </div>
 
     <!-- Container (Portfolio Section) -->
-    <!--<section class="w3-content w3-container w3-padding-64">
+    <section class="w3-content w3-container w3-padding-64" id="portfolio">
         <h3 class="w3-center">MY WORK</h3>
         <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to make them bigger</em></p><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
-            
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
+            <button id="grid">
+                <div class="content"></div>                
+            </button> 
             <!--<div class="w3-col m3">
                 <img src="./assets/images/Preview1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Low Cost Educational Robot For Teaching Childrens STEM Education">
             </div>
@@ -111,8 +104,8 @@
             <form class="w3-col m12" method="get" action="./assets/files/MUngerFullPortfolio.pdf">
                 <button class="w3-button w3-padding-large w3-light-grey w3-center" style="margin-top:64px">Download Full Portfoilio</button>
             </form>
-            <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"><a href="../ungermatthew.github.io/assets/files/MUngerFullPortfolio.pdf" download>Download Full Portfoilio</a></button>
-       </div>-->
+            <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"><a href="../ungermatthew.github.io/assets/files/MUngerFullPortfolio.pdf" download>Download Full Portfoilio</a></button>-->
+       </div>
     </section>
 
     <section class="w3-content w3-container w3-padding-64" id="about">
@@ -141,7 +134,93 @@
                 </p>
             </div>
         </div>
+        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+        <p class="w3-wide"><img src="./assets/images/Asset55.png" id="BarImage"/>Computer Skills</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><img src="./assets/images/Asset56.png" id="BarImage" />Presentation</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+        <p class="w3-wide"><img src="./assets/images/Asset57.png" id="BarImage" />Drawing</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+        <p class="w3-wide"><img src="./assets/images/Asset58.png" id="BarImage" />Interfaces</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+        </div>
     </section>
+
+    <section class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">9</span><br>
+            Partners
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">20+</span><br>
+            Projects
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">15+</span><br>
+            Softwares
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">4</span><br>
+            Workshops
+        </div>
+    </section>
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+        <div class="w3-row w3-padding-large w3-section" id="PaddedContent">
+            <div class="">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Schaumburg, IL<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (847) 767-0096<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ungermatt99@gmail.com<br>
+                    <img src="./assets/images/curriculum.png" id="customGlyph" /><a href="/./assets/files/Resume.pdf" download>Download Resume</a><br>
+                </div>
+                Leave me a note:
+                <form action="mailto:ungermatt99@gmail.com?" method="post" enctype="text/plain">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <div class="w3-center">
+                        <button class="w3-button w3-black w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
