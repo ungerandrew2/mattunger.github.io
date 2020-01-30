@@ -65,7 +65,6 @@ html {
     border-radius: 0px;
 }
 #myNavbar a{
-  padding: 12px;
   font-size: 17px;
   width: 15%;
   display: block;
@@ -74,6 +73,7 @@ html {
   text-decoration: none;
   line-height: 42px;
   color: #707070;
+  margin: 0px 12px;
 }
 
 #myNavbar a:hover{
@@ -182,6 +182,76 @@ html {
 
 }
 .bottom{
-    height: 100px;
+    height: 54px;
     background-color: #98D9C7;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.w3-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.w3-bar a img{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+.row-first {
+  height:50%;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto!important;
+  color: #707070!important;
+}
+.row-other{
+    height: 16.66666666666667%;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto!important;
+}
+.icon{
+    font-size: 42px!important;
+    color: #98D9C7!important;
+    border: none!important;
+}
+.bioText{
+    max-width: 100%;
+    margin: auto!important;
+    margin-bottom: 50px!important;
+    color: #707070!important;
+}
+[class*='col-']{
+    padding: 0px 7px !important;
+}
+.title{
+    font-size: 33px;
+    color: #98D9C7;
+    margin: 50px 0px;
+}
+.info{
+    font-family: Arial!important;
+    font-size: 16px!important;
+    padding-left: 10px;
+    color: #707070!important;
+}
+.iconInfo{
+    color: #98D9C7;
+    font-size: 20px!important;
+}
+.BackToTop{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -44px;
+    height: auto;
+    width: auto;
 }
