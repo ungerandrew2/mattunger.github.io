@@ -10,7 +10,6 @@ body, html {
     height: 100%;
     line-height: 1.8;
     font-family: "Arial";
-    background-color: #fbfbfb!important;
 }
 .em{
     color:white;
@@ -81,6 +80,8 @@ html {
     transition:all 0.3s ease-in-out;
     color: #98D9C7;
     display: inline-block;
+    background-color: #FBFBFB!important;
+    opacity: 1.0!important;
 }
 /*.active{
     text-decoration: underline!important;
