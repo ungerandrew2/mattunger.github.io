@@ -38,7 +38,7 @@ function highlightNavigation() {
     $sections.each(function() {
         var currentSection = $(this);
         // get the position of the section
-        var sectionTop = currentSection.offset().top - 10;
+        var sectionTop = currentSection.offset().top - 150;
 
         // if the user has scrolled over the top of the section  
         if (scrollPosition >= sectionTop) {
